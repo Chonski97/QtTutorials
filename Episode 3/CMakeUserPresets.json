@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "Qt-Debug",
+      "inherits": "Qt-Default",
+      "binaryDir": "${sourceDir}/out/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_CXX_FLAGS": "-DQT_QML_DEBUG"
+      },
+      "environment": {
+        "QML_DEBUG_ARGS": "-qmljsdebugger=file:{126be3d6-56a7-4c1f-8cf4-7ceaa284e114},block"
+      }
+    },
+    {
+      "name": "Qt-Release",
+      "inherits": "Qt-Default",
+      "binaryDir": "${sourceDir}/out/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "6.4.1_msvc2019_64",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/Qt6.8/6.8.0/msvc2022_64"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "h6fSvcwvc7BuzdqgVrsybIRvP1E="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "Qt6",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/Qt6.8/6.8.0/msvc2022_64"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "N3mirobvwk8q8Vbby4mT5h1FRYM="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "Qt-Default",
+      "inherits": "6.8.0_msvc2022_64",
+      "vendor": {
+        "qt-project.org/Default": {
+          "checksum": "DBTqMydOw2UMLXPo9VKLNZVd1O4="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "6.8.0_msvc2022_64",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/Qt6.8/6.8.0/msvc2022_64"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "7UT/7vVydzeZm7pzbtRliI/7o7g="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "QtDesignStudio_qt6_design_studio_reduced_version",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/Qt6.8/6.8.0/msvc2022_64"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "mpJJAtiGyel/2ng40NwFvj/MIMM="
+        }
+      }
+    }
+  ],
+  "vendor": {
+    "qt-project.org/Presets": {
+      "checksum": "CZJNkshaUZ2OzK2NzOIEZrYxZFo="
+    }
+  }
+}
